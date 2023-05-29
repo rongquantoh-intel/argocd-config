@@ -1,20 +1,4 @@
-- deployment:
-  inventory: file url
-  bkc_update: yes/no
-    image_location: url
-    image_name: tag/sha1
-  Non_k8s_deploy:
-     Ansible_env: yes/no
-    install_docker: yes/no
-    deploy_comp1: yes/no
-      image_location: url
-      image_name: tag/sha1
-    deploy_comp2: yes/no
-    deploy_compx: yes/no
-  k8s_deploy:
-    Install_k8s_env: yes/no
-    install_k8s_services: yes/no
-    deploy_argoCD_components: yes/no
-      helm_repo: https://charts.bitnami.com/bitnami
-      helm_name: bitnami/nginx
+deploy_argoCD_components: yes/no
+  helm_repo: https://charts.bitnami.com/bitnami
+  helm_name: bitnami/nginx
 Trigger_tests: yes/no
