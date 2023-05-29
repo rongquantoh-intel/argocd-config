@@ -1,4 +1,4 @@
 deploy_argoCD_components:
-  - helm_repo: https://charts.bitnami.com/bitnami
-    helm_name: bitnami/nginx
+  helm_repo: https://charts.bitnami.com/bitnami
+  helm_name: bitnami/nginx
 Trigger_tests: yes/no
